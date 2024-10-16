@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="img/avatar-perfil.png" alt="Avatar da fernanda">
-    <p>Eu sou Lucas</p>
+    <header class="container text-center">
+    <img src="img/avatar-perfil.png" alt="Avatar da fernanda" class="rounded-circle" width="150" height="150">
+    <p class="lead">Eu sou Lucas</p>
     <h1>Eu ensino Programação</h1>
     <p>Químico por formação e Analista e Desenvolvedor de Sistemas em andamento. Trabalho
         atualmente como professor PSS no estado do Paraná, ensinando programação, principalmene
@@ -17,12 +19,116 @@
     </p>
     <p>Minhas Habilidades</p>
     <div>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JS</p>
-        <p>C++</p>
-        <p>Python</p>
-        <p>Scratch</p>
+        <p class="badge text-bg-secondary">HTML</p>
+        <p class="badge text-bg-secondary">CSS</p>
+        <p class="badge text-bg-secondary">JS</p>
+        <p class="badge text-bg-secondary">C++</p>
+        <p class="badge text-bg-secondary">Python</p>
+        <p class="badge text-bg-secondary">Scratch</p>
     </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus Projetos</h2>
+        <div class="row">
+            <!--Projeto 1-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto de leitura de biblioteca virtual">
+                    <div class="card-body">
+                      <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                      <p class="card-text">Descrição do projeto</p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Link para o vercel</button>
+                    </div>
+                  </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de leitura de biblioteca virtual">
+                    <div class="card-body">
+                      <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                      <p class="card-text">Descrição do projeto</p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Link para o vercel</button>
+                    </div>
+                  </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de leitura de biblioteca virtual">
+                    <div class="card-body">
+                      <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                      <p class="card-text">Descrição do projeto</p>
+                      <a button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Link para o vercel</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <!--Modal 1-->
+    <div class="modal" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Aqui explica os códigos</p>
+            <img src="img/projeto-1.png" alt="Imagem representativa">
+          </div>
+          <div class="modal-footer">
+            <a href="">Ver projeto ao vivo</a>
+            <a href="">Ver código do projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal 2-->
+    <div class="modal" id="modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Aqui explica os códigos</p>
+            <img src="img/projeto-1.png" alt="Imagem representativa">
+          </div>
+          <div class="modal-footer">
+            <a href="">Ver projeto ao vivo</a>
+            <a href="">Ver código do projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal 3-->
+    <div class="modal" id="modal3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Aqui explica os códigos</p>
+            <img src="img/projeto-1.png" alt="Imagem representativa">
+          </div>
+          <div class="modal-footer">
+            <a href="">Ver projeto ao vivo</a>
+            <a href="">Ver código do projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container py-5">
+      <h2>Entre em contato</h2>
+      <div>
+        <a href="https://github.com/LeherLucas">GitHub</a>
+      </div>
+      <p class="my-5 text-center">Copyright 2024. Produzido por Lucas M. Camacho</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
